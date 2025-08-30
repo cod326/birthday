@@ -79,7 +79,7 @@ button{
 }
 .wish {
     display: inline-block;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
@@ -94,4 +94,5 @@ button{
         width: 312px;
     }
 }
+
  
