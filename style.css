@@ -1,0 +1,97 @@
+*{
+    margin:0px;
+    padding:0px;
+    border: 0px;
+    outline: 0px;
+    font-family:monospace;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body{
+    text-align: center;
+}
+
+.balloon{
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    border-radius:50%;
+    margin:25px;
+    background: linear-gradient(120deg,
+    rgb(var(--r),var(--g),var(--b)),rgba(var(--r),var(--g),var(--b), 0.75),var(--lastColor));
+}
+
+.balloon-line{
+    position: fixed;
+    text-align: left;
+    z-index: -100;
+    top: 0%;
+    animation: balloon 10s linear;
+    transition: filter 0.5s;
+}
+
+
+.balloon > svg{
+    height: 100px;
+    aspect-ratio: 1 / 4;
+    position: relative;
+    top: 44px;
+    left: 10px;
+}
+
+button{
+    color: white;
+    background: radial-gradient(red,rgb(253, 12, 12),rgb(253, 23, 23),rgb(249, 30, 30),rgb(255, 56, 56));
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.cakeAndWish{
+    padding-top: 200px;
+    display: none;
+}
+
+.cakeAndWish img{
+    width: 200px;
+}
+
+.gradient{
+    background: linear-gradient(
+        45deg,
+        rgb(255, 116, 116),rgb(146, 255, 125),rgb(130, 128, 255),rgb(255, 141, 141)
+    );
+    background-size: 250%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 20s linear infinite normal ;
+}
+
+@keyframes balloon {
+    from{
+        top: 100%;
+    }to{
+        top: -160px;
+    }
+}
+.wish {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(19) 0.5s forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 312px;
+    }
+}
+ 
